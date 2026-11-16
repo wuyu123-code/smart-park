@@ -38,7 +38,7 @@ watch(router.currentRoute, (value) => {
     display: flex;
     align-items: center;
     justify-content: center;
-    pointer-events: all;
+    pointer-events: none;
     z-index: 1000;
     .navigation {
         width: 40%;
@@ -48,6 +48,7 @@ watch(router.currentRoute, (value) => {
         list-style: none;
         margin-top: 24px;
         position: relative;
+         pointer-events: auto;
         .active-item.nav-item {
             color: #4abebe;
             border-color: #4abebe;
